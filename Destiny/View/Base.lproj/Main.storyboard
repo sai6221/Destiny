@@ -28,25 +28,31 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-ey-P8q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-ey-P8q">
                                         <rect key="frame" x="10" y="628" width="394" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="v5L-fa-PEx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Option1" backgroundImage="choice1Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JM7-8D-nOc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-nT-cco">
                                         <rect key="frame" x="10" y="738" width="394" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="pUe-7f-hZX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Option2" backgroundImage="choice2Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPh-1o-jdX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -72,6 +78,11 @@
                             <constraint firstItem="TAp-hi-pE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="viD-Fo-IZj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="option1" destination="mdr-ey-P8q" id="Mga-F7-j2r"/>
+                        <outlet property="option2" destination="fw2-nT-cco" id="6nu-gq-kM4"/>
+                        <outlet property="questionLabel" destination="fDQ-S8-sQu" id="ScH-XV-GqL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

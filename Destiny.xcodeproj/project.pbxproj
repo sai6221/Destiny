@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1DB23C726B4FFD4009422F6 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB23C626B4FFD4009422F6 /* Story.swift */; };
+		C1DB23C926B4FFDF009422F6 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB23C826B4FFDF009422F6 /* Brain.swift */; };
 		C1FD200E26B46795008C33AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD200D26B46795008C33AB /* AppDelegate.swift */; };
 		C1FD201026B46795008C33AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD200F26B46795008C33AB /* SceneDelegate.swift */; };
 		C1FD201226B46795008C33AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD201126B46795008C33AB /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1DB23C626B4FFD4009422F6 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C1DB23C826B4FFDF009422F6 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		C1FD200A26B46795008C33AB /* Destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Destiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FD200D26B46795008C33AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FD200F26B46795008C33AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1DB23C326B4FFA7009422F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1DB23C626B4FFD4009422F6 /* Story.swift */,
+				C1DB23C826B4FFDF009422F6 /* Brain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1DB23C426B4FFB1009422F6 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD201126B46795008C33AB /* ViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		C1DB23C526B4FFBB009422F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD201326B46795008C33AB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C1FD200126B46795008C33AB = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +87,9 @@
 			children = (
 				C1FD200D26B46795008C33AB /* AppDelegate.swift */,
 				C1FD200F26B46795008C33AB /* SceneDelegate.swift */,
-				C1FD201126B46795008C33AB /* ViewController.swift */,
-				C1FD201326B46795008C33AB /* Main.storyboard */,
+				C1DB23C326B4FFA7009422F6 /* Model */,
+				C1DB23C426B4FFB1009422F6 /* Contoller */,
+				C1DB23C526B4FFBB009422F6 /* View */,
 				C1FD201626B46799008C33AB /* Assets.xcassets */,
 				C1FD201826B46799008C33AB /* LaunchScreen.storyboard */,
 				C1FD201B26B46799008C33AB /* Info.plist */,
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FD201226B46795008C33AB /* ViewController.swift in Sources */,
+				C1DB23C726B4FFD4009422F6 /* Story.swift in Sources */,
 				C1FD200E26B46795008C33AB /* AppDelegate.swift in Sources */,
+				C1DB23C926B4FFDF009422F6 /* Brain.swift in Sources */,
 				C1FD201026B46795008C33AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
